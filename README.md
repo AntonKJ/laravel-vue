@@ -8,6 +8,11 @@ Dashboard template из Figma
 ```
 Установка Выполнить docker-compose up -d из первой (корневой)
 
+http://0.0.0.0/home
+http://0.0.0.0:8765 - PHPMyAdmin
+```
+MYSQL_ROOT_PASSWORD: rootpwd6421
+```
 код проекта в src/LaravelVue/
 
 #Установка db mysql из корневой папки проекта, если надо
@@ -55,4 +60,4 @@ apt-get update && \
         zlib1g-dev libpng-dev\
     && docker-php-ext-install gd
 ```
-RELOAD PAGE AFTER INSTALL EXTS!
+RESTART DOCKER AFTER INSTALL EXTS!
