@@ -1,6 +1,6 @@
-laravel-vue
+Laravel-vue
 
-Dasboar template из Figma https://www.figma.com/file/B7lZ78uVTP5xflPYL3Asmt/Dashboard-Advanced?node-id=0%3A1
+Dashboard template из Figma https://www.figma.com/file/B7lZ78uVTP5xflPYL3Asmt/Dashboard-Advanced?node-id=0%3A1
 
 Установка Выполнить docker-compose up -d из первой (корневой)
 
