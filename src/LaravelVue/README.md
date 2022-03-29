@@ -161,21 +161,4 @@ Route::get('/{any?}', [
     }
 ])->where('any', '.*');
 ```
-## Run the application
-### Start Laravel app
-```
-php artisan serve
-```
-### Compile components
-```
-npm run dev
-```
-### Access the application at localhost:8000
-#### Open [localhost:8000](http://localhost:8000/)
-
-### Link to Github repo.
-
-### [Github repository](https://github.com/johnwanjema/Getting-startes-with-Laravel-and-Vue-js)
-
-### Happy coding
 

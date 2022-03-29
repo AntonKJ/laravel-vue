@@ -15,16 +15,17 @@ MYSQL_ROOT_PASSWORD: rootpwd6421
 ```
 код проекта в src/LaravelVue/
 
-#Установка db mysql из корневой папки проекта, если надо
+#Установка db mysql из корневой папки проекта,
+#миграции есть 
 ```
-cat laravelvue.sql | docker exec -it mariadb /usr/bin/mysql -u root --password=rootpwd6421 laravelvue
+cat laravelvue.sql | docker exec -it lara-vue-mariadb /usr/bin/mysql -u root --password=rootpwd6421 laravelvue
 ```
 ```
 docker exec -it laravel-vue-app su
 cd home/LaravelVue/
 composer install
 ```
-#==================#END#==================#
+#==================#==================#
 
 #if not PDO Driver
 ```
@@ -36,9 +37,20 @@ docker-php-ext-install pdo_mysql
 docker-compose exec php docker-php-ext-install pdo_mysql
 docker-compose exec php docker-php-ext-install intl
 ```
-#docker-compose reload
-
-#if exception Message format 'date' is not supported. You have to install PHP intl extension to use this feature.
+```
+docker-compose restart
+```
+#if not ZIP extension
+```
+set -eux     
+&& apt-get update     
+&& apt-get install -y libzip-dev zlib1g-dev     
+&& docker-php-ext-install zip
+```
+```
+docker-compose restart
+```
+#if excepsion Message format 'date' is not supported. You have to install PHP intl extension to use this feature.
 ```
 docker exec -it php su
 apt-get -y update \
