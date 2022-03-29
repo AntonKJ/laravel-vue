@@ -15,8 +15,7 @@ MYSQL_ROOT_PASSWORD: rootpwd6421
 ```
 код проекта в src/LaravelVue/
 
-#Установка db mysql из корневой папки проекта,
-#миграции есть 
+#Установка db mysql из корневой папки проекта, миграции есть 
 ```
 cat laravelvue.sql | docker exec -it lara-vue-mariadb /usr/bin/mysql -u root --password=rootpwd6421 laravelvue
 ```
