@@ -2,19 +2,17 @@ Laravel-vue
 
 !["Dashboard Vue.js Presentation"](https://github.com/AntonKJ/laravel-vue/blob/main/scrin-2022-03-28_19-58.png)
 
-Dashboard template из Figma
+Dashboard template дизайн из Figma (выгрузил местным гениратором кода)
 ```
  https://www.figma.com/file/B7lZ78uVTP5xflPYL3Asmt/Dashboard-Advanced?node-id=0%3A1
 ```
-Установка Выполнить docker-compose up -d из первой (корневой)
+#Установка выполнить docker-compose up -d из первой (корневой)
 
 http://0.0.0.0/home
 http://0.0.0.0:8765 - PHPMyAdmin
 ```
 MYSQL_ROOT_PASSWORD: rootpwd6421
 ```
-код проекта в src/LaravelVue/
-
 #Установка db mysql из корневой папки проекта, миграции есть 
 ```
 cat laravelvue.sql | docker exec -it lara-vue-mariadb /usr/bin/mysql -u root --password=rootpwd6421 laravelvue
@@ -24,8 +22,12 @@ docker exec -it laravel-vue-app su
 cd home/LaravelVue/
 composer install
 ```
-#==================#==================#
-
+#код проекта в src/LaravelVue/
+#Корневая дирректория проекта 
+https://github.com/AntonKJ/laravel-vue/tree/main/src/LaravelVue
+#выполнить в контейнере
+#==================#END#==================#
+#  ERRORS
 #if not PDO Driver
 ```
 docker exec -it php su
