@@ -1,4 +1,4 @@
-## Ever wondered how to setup Vue in your laravel project.
+Ох## Ever wondered how to setup Vue in your laravel project.
 ![Alt Text](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/rmtm25h4rb9sgsw3505z.png)
 ## Laravel
 Laravel is a web application framework with expressive, elegant syntax. We’ve already laid the foundation — freeing you to create without sweating the small things.
@@ -54,7 +54,7 @@ php artisan passport:install
 ## Test user in database
 ```json
 {
-    "email": "testuser@maketmarket.test",
+    "email": "testuser@gmail.test",
     "name": "test",
     "phone": "79999999999",
     "password": "secret",
